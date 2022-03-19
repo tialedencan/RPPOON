@@ -10,6 +10,7 @@ namespace LV2
         {
             
             DiceRoller diceRoller = new DiceRoller();
+            
 
             int i;
             for (i = 0; i < 20; i++)
