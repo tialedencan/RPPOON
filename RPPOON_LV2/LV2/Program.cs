@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Text;
+using System.Collections.Generic;
 
 namespace LV2
 {
@@ -6,7 +8,28 @@ namespace LV2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
+            DiceRoller diceRoller = new DiceRoller();
+
+            int i;
+            for (i = 0; i < 20; i++)
+            {
+                diceRoller.InsertDie(new Die(6));
+            }
+
+            diceRoller.RollAllDice();
+
+            StringBuilder stringBuilder = new StringBuilder();
+            IList<int> rollingResults = diceRoller.GetRollingResults();
+
+            foreach (int rollingResult in rollingResults)
+            {
+                stringBuilder.Append(rollingResult.ToString() + ", ");
+            }
+
+            Console.WriteLine(stringBuilder.ToString());
+
+
         }
     }
 }
