@@ -11,7 +11,7 @@ namespace LV2
             
             DiceRoller diceRoller = new DiceRoller();
             ILogger logger = new ConsoleLogger();
-            diceRoller.SetLogger(logger);
+            
 
             int i;
             for (i = 0; i < 20; i++)
@@ -30,7 +30,7 @@ namespace LV2
             }
 
             Console.WriteLine(stringBuilder.ToString());
-            diceRoller.LogRollingResults();
+           
 
         }
     }

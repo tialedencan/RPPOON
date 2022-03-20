@@ -6,9 +6,9 @@ namespace LV2
 {
     internal class ConsoleLogger:ILogger
     {
-        public void Log(string message)
+        public void Log(ILogable data)
         {
-           Console.WriteLine(message);
+           Console.WriteLine(data.GetStringRepresentation());
         }
 
     }

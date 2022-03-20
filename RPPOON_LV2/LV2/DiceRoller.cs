@@ -4,11 +4,11 @@ using System.Text;
 
 namespace LV2
 {
-    internal class DiceRoller
+    internal class DiceRoller:ILogable
     {
         private List<Die> dice;
         private List<int> resultForEachRoll;
-        private ILogger logger;
+       
         public DiceRoller()
         {
             this.dice = new List<Die>();
@@ -40,16 +40,16 @@ namespace LV2
             get { return dice.Count; }
         }
 
-        public void SetLogger(ILogger logger)
+       
+        public string GetStringRepresentation()
         {
-            this.logger = logger;
-        }
-        public void LogRollingResults()
-        {
+            StringBuilder sb = new StringBuilder();
+
             foreach (int result in this.resultForEachRoll)
             {
-                logger.Log(result.ToString());
+                sb.Append(result);
             }
+            return sb.ToString();   
         }
     }
 }

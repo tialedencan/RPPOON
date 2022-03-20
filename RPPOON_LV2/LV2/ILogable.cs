@@ -4,8 +4,8 @@ using System.Text;
 
 namespace LV2
 {
-    internal interface ILogger
+    interface ILogable
     {
-        void Log(ILogable data);
+        string GetStringRepresentation();
     }
 }
