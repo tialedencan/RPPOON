@@ -33,16 +33,6 @@ namespace LV2
                 }
             }
         }
-        public string GetStringRepresentation()
-        {
-            StringBuilder sb = new StringBuilder();
-
-            foreach (int result in this.resultForEachRoll)
-            {
-                sb.Append(result +" ");
-            }
-            return sb.ToString();
-        }
         public void RollAllDice()
         {
             this.resultForEachRoll.Clear();
