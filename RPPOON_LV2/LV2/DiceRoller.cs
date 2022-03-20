@@ -8,10 +8,12 @@ namespace LV2
     {
         private List<Die> dice;
         private List<int> resultForEachRoll;
+        private ILogger logger;
         public DiceRoller()
         {
             this.dice = new List<Die>();
             this.resultForEachRoll = new List<int>();
+           
         }
         public void InsertDie(Die die)
         {
@@ -36,6 +38,18 @@ namespace LV2
         public int DiceCount
         {
             get { return dice.Count; }
+        }
+
+        public void SetLogger(ILogger logger)
+        {
+            this.logger = logger;
+        }
+        public void LogRollingResults()
+        {
+            foreach (int result in this.resultForEachRoll)
+            {
+                logger.Log(result.ToString());
+            }
         }
     }
 }
