@@ -12,9 +12,7 @@ namespace LV2
             DiceRoller diceRoller = new DiceRoller();
             ILogger logger = new ConsoleLogger();
             
-
-            int i;
-            for (i = 0; i < 20; i++)
+            for (int i = 0; i < 20; i++)
             {
                 diceRoller.InsertDie(new Die(6));
             }
@@ -31,7 +29,17 @@ namespace LV2
 
             Console.WriteLine(stringBuilder.ToString());
            
+            FlexibleDiceRoller flexibleDiceRoller = new FlexibleDiceRoller();
 
+            for (int i = 0; i < 4; i++)
+            {
+                flexibleDiceRoller.InsertDie(new Die(6));
+                flexibleDiceRoller.InsertDie(new Die(12));
+            }
+            flexibleDiceRoller.RollAllDice();
+            Console.WriteLine(flexibleDiceRoller.GetStringRepresentation());
+            flexibleDiceRoller.RemoveDiceWithSpecificNumberOfSides(12);
+            Console.WriteLine(flexibleDiceRoller.GetStringRepresentation());
         }
     }
 }

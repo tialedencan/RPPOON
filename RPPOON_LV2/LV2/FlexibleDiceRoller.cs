@@ -22,6 +22,27 @@ namespace LV2
             this.dice.Clear();
             this.resultForEachRoll.Clear();
         }
+        public void RemoveDiceWithSpecificNumberOfSides(int numberOfSides)
+        {   
+            for(int i = dice.Count-1; i >= 0; i--)
+            {
+                if(dice[i].GetNumberOfSides() == numberOfSides)
+                {
+                    this.dice.RemoveAt(i);
+                    this.resultForEachRoll.RemoveAt(i);
+                }
+            }
+        }
+        public string GetStringRepresentation()
+        {
+            StringBuilder sb = new StringBuilder();
+
+            foreach (int result in this.resultForEachRoll)
+            {
+                sb.Append(result +" ");
+            }
+            return sb.ToString();
+        }
         public void RollAllDice()
         {
             this.resultForEachRoll.Clear();
