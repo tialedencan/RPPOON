@@ -28,8 +28,10 @@ namespace LV2
             }
 
             Console.WriteLine(stringBuilder.ToString());
-           
-            
+
+            ILogger fileLogger = new FileLogger("D:/Faks/4.semestar/RPPOON/novi.txt");
+
+            fileLogger.Log(diceRoller);
         }
     }
 }
