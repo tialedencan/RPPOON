@@ -44,7 +44,13 @@ namespace LV3
 
         public Prototype Clone()
         {
-            return (Prototype)this.MemberwiseClone();
+            //Prototype clone=(Prototype)this.MemberwiseClone();
+            Dataset dataCopy = new Dataset();
+            for(int i = 0; i< data.Count;i++)
+            {
+                dataCopy.data[i] = data[i];
+            }
+            return dataCopy;
         }
     }
 }

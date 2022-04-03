@@ -1,0 +1,14 @@
+D:\Faks\4.semestar\RPPOON\lv\RPPOON_LV3\LV3\bin\Debug\netcoreapp3.1\LV3.exe
+D:\Faks\4.semestar\RPPOON\lv\RPPOON_LV3\LV3\bin\Debug\netcoreapp3.1\LV3.deps.json
+D:\Faks\4.semestar\RPPOON\lv\RPPOON_LV3\LV3\bin\Debug\netcoreapp3.1\LV3.runtimeconfig.json
+D:\Faks\4.semestar\RPPOON\lv\RPPOON_LV3\LV3\bin\Debug\netcoreapp3.1\LV3.runtimeconfig.dev.json
+D:\Faks\4.semestar\RPPOON\lv\RPPOON_LV3\LV3\bin\Debug\netcoreapp3.1\LV3.dll
+D:\Faks\4.semestar\RPPOON\lv\RPPOON_LV3\LV3\bin\Debug\netcoreapp3.1\LV3.pdb
+D:\Faks\4.semestar\RPPOON\lv\RPPOON_LV3\LV3\obj\Debug\netcoreapp3.1\LV3.csproj.AssemblyReference.cache
+D:\Faks\4.semestar\RPPOON\lv\RPPOON_LV3\LV3\obj\Debug\netcoreapp3.1\LV3.GeneratedMSBuildEditorConfig.editorconfig
+D:\Faks\4.semestar\RPPOON\lv\RPPOON_LV3\LV3\obj\Debug\netcoreapp3.1\LV3.AssemblyInfoInputs.cache
+D:\Faks\4.semestar\RPPOON\lv\RPPOON_LV3\LV3\obj\Debug\netcoreapp3.1\LV3.AssemblyInfo.cs
+D:\Faks\4.semestar\RPPOON\lv\RPPOON_LV3\LV3\obj\Debug\netcoreapp3.1\LV3.csproj.CoreCompileInputs.cache
+D:\Faks\4.semestar\RPPOON\lv\RPPOON_LV3\LV3\obj\Debug\netcoreapp3.1\LV3.dll
+D:\Faks\4.semestar\RPPOON\lv\RPPOON_LV3\LV3\obj\Debug\netcoreapp3.1\LV3.pdb
+D:\Faks\4.semestar\RPPOON\lv\RPPOON_LV3\LV3\obj\Debug\netcoreapp3.1\LV3.genruntimeconfig.cache
