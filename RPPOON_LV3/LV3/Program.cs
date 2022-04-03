@@ -8,19 +8,19 @@ namespace LV3
         static void Main(string[] args)
         {
             Dataset dataset = new Dataset("D:/Faks/4.semestar/RPPOON/lv/csvFile.csv");
-            Dataset datasetClone=(Dataset)dataset.Clone();
+            Dataset datasetClone = (Dataset)dataset.Clone();
 
             IList<List<string>> dataFromCSVFile = dataset.GetData();
             IList<List<string>> dataCopy = datasetClone.GetData();
 
-            for (int i=0; i<dataFromCSVFile.Count; i++)
+            for (int i = 0; i < dataFromCSVFile.Count; i++)
             {
                 for (int j = 0; j < dataFromCSVFile[i].Count; j++)
                 {
                     Console.WriteLine(dataFromCSVFile[i][j]);
-                } 
+                }
             }
-            
+
             for (int i = 0; i < dataCopy.Count; i++)
             {
                 for (int j = 0; j < dataCopy[i].Count; j++)
@@ -28,9 +28,20 @@ namespace LV3
                     Console.WriteLine(dataCopy[i][j]);
                 }
             }
-            
 
+            Console.WriteLine("\nMatrix:");
 
+            MatrixGenerator matrix = MatrixGenerator.GetInstance(2, 3);
+
+            for (int i = 0; i < matrix.GetMatrix().Length; i++)
+            {
+                for (int j = 0; j < matrix.GetMatrix()[i].Length; j++)
+                {
+                    Console.Write(matrix.GetMatrix()[i][j]+" ");
+
+                }
+                Console.Write("\n");
+            }
         }
     }
 }

@@ -53,7 +53,6 @@ namespace LV3
                     dataCopy.data[i].Add(data[i][j]);
                 }
             }
-            //dataCopy.data.Add(new List<string>() { "hello" });
             return dataCopy;
         }
     }
