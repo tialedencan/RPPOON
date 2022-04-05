@@ -7,36 +7,34 @@ namespace LV3
     class MatrixGenerator
     {
         private static MatrixGenerator instance;
-        private double[][] matrix;
-      
-        private MatrixGenerator(int numberOfRows, int numberOfColumns)
+        private Random generator;
+        private MatrixGenerator()
         {
-            Random generator = new Random();
-
-            this.matrix = new double[numberOfRows][];
-
-            for(int i = 0; i < numberOfRows; i++)
-            {
-                matrix[i] = new double[numberOfColumns];
-
-                for(int j=0; j < numberOfColumns; j++)
-                {
-                    matrix[i][j] = generator.NextDouble();
-                }
-            }
+            this.generator = new Random();
         }  
-        public static MatrixGenerator GetInstance(int numberOfRows, int numberOfColumns)
+        public static MatrixGenerator GetInstance()
         {
             if (instance == null)
             {
-                instance = new MatrixGenerator(numberOfRows,numberOfColumns);
+                instance = new MatrixGenerator();
             }
             return instance;
             
         }
 
-        public double[][] GetMatrix()
+        public double[][] GetMatrix(int numberOfRows, int numberOfColumns)
         {
+            double[][] matrix = new double[numberOfRows][];
+            
+            for (int i = 0; i < numberOfRows; i++)
+            {
+                matrix[i] = new double[numberOfColumns];
+
+                for (int j = 0; j < numberOfColumns; j++)
+                {
+                    matrix[i][j] = generator.NextDouble();
+                }
+            }
             return matrix;
         }
     }

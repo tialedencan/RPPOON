@@ -31,17 +31,25 @@ namespace LV3
 
             Console.WriteLine("\nMatrix:");
 
-            MatrixGenerator matrix = MatrixGenerator.GetInstance(2, 3);
+            MatrixGenerator matrix = MatrixGenerator.GetInstance();
 
-            for (int i = 0; i < matrix.GetMatrix().Length; i++)
+            for (int i = 0; i < matrix.GetMatrix(2, 3).Length; i++)
             {
-                for (int j = 0; j < matrix.GetMatrix()[i].Length; j++)
+                for (int j = 0; j < matrix.GetMatrix(2, 3)[i].Length; j++)
                 {
-                    Console.Write(matrix.GetMatrix()[i][j]+" ");
+                    Console.Write(matrix.GetMatrix(2, 3)[i][j]+" ");
 
                 }
                 Console.Write("\n");
             }
+
+            FileLogger logger = FileLogger.GetInstance();
+            logger.GetStreamWriter().WriteLineAsync("Hello!");
+            logger.GetStreamWriter().WriteLineAsync("Nice to meet you.");
+
+            logger.SetFilePath("D:/Faks/4.semestar/RPPOON/lv/file.txt");
+            logger.GetStreamWriter().WriteLineAsync("Hello!");
+           
         }
     }
 }
