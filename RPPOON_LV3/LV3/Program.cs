@@ -44,11 +44,11 @@ namespace LV3
             }
 
             FileLogger logger = FileLogger.GetInstance();
-            logger.GetStreamWriter().WriteLineAsync("Hello!");
-            logger.GetStreamWriter().WriteLineAsync("Nice to meet you.");
+            logger.Log("Hello!");
+            logger.Log("Nice to meet you."); //prebrisat ce prethodnu 
 
             logger.SetFilePath("D:/Faks/4.semestar/RPPOON/lv/file.txt");
-            logger.GetStreamWriter().WriteLineAsync("Hello!");
+            logger.Log("Hello!");
            
         }
     }

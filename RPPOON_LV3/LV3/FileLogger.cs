@@ -27,10 +27,13 @@ namespace LV3
             this.filePath = filePath;
                         
         }
-        public StreamWriter GetStreamWriter()
+        public void Log(string text)
         {
-            StreamWriter writer= new StreamWriter(filePath);
-            return writer;
+            using (StreamWriter writer = new StreamWriter(filePath))
+            {
+                writer.WriteLine(text);
+            }   
+            
         }
        
     }
