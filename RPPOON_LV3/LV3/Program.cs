@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using LV3.Zad4;
 
 namespace LV3
 {
@@ -7,6 +8,8 @@ namespace LV3
     {
         static void Main(string[] args)
         {
+            #region Z
+            /*
             Dataset dataset = new Dataset("D:/Faks/4.semestar/RPPOON/lv/csvFile.csv");
             Dataset datasetClone = (Dataset)dataset.Clone();
 
@@ -46,10 +49,17 @@ namespace LV3
             FileLogger logger = FileLogger.GetInstance();
             logger.Log("Hello!");
             logger.Log("Nice to meet you."); //prebrisat ce prethodnu 
-
+            
             logger.SetFilePath("D:/Faks/4.semestar/RPPOON/lv/file.txt");
             logger.Log("Hello!");
-           
+            */
+            #endregion
+
+            ConsoleNotification notification = new ConsoleNotification("Tia", "Wednesday", "Today is wednesday.", 
+                                                                         new DateTime(2022, 4, 6), Category.INFO,
+                                                                         ConsoleColor.Magenta);
+            NotificationManager notificationManager = new NotificationManager();
+            notificationManager.Display(notification);
         }
     }
 }
