@@ -29,7 +29,7 @@ namespace LV3
         }
         public void Log(string text)
         {
-            using (StreamWriter writer = new StreamWriter(filePath))
+            using (StreamWriter writer = new StreamWriter(filePath,true))
             {
                 writer.WriteLine(text);
             }   

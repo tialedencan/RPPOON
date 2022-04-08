@@ -9,31 +9,26 @@ namespace LV3
     {
         static void Main(string[] args)
         {
-            #region Z
-            /*
+            #region Z1
             Dataset dataset = new Dataset("D:/Faks/4.semestar/RPPOON/lv/csvFile.csv");
             Dataset datasetClone = (Dataset)dataset.Clone();
 
             IList<List<string>> dataFromCSVFile = dataset.GetData();
-            IList<List<string>> dataCopy = datasetClone.GetData();
 
             for (int i = 0; i < dataFromCSVFile.Count; i++)
             {
                 for (int j = 0; j < dataFromCSVFile[i].Count; j++)
                 {
-                    Console.WriteLine(dataFromCSVFile[i][j]);
+                    Console.Write(dataFromCSVFile[i][j]);
                 }
+                Console.Write("\n");
             }
 
-            for (int i = 0; i < dataCopy.Count; i++)
-            {
-                for (int j = 0; j < dataCopy[i].Count; j++)
-                {
-                    Console.WriteLine(dataCopy[i][j]);
-                }
-            }
+            Console.WriteLine(datasetClone);
+            #endregion
 
-            Console.WriteLine("\nMatrix:");
+            #region Z2
+            Console.WriteLine("Matrix:");
 
             MatrixGenerator matrix = MatrixGenerator.GetInstance();
 
@@ -46,22 +41,26 @@ namespace LV3
                 }
                 Console.Write("\n");
             }
+            Console.Write("\n");
+            #endregion
 
+            #region Z3
             FileLogger logger = FileLogger.GetInstance();
             logger.Log("Hello!");
-            logger.Log("Nice to meet you."); //prebrisat ce prethodnu 
+            logger.Log("Nice to meet you.");  
             
             logger.SetFilePath("D:/Faks/4.semestar/RPPOON/lv/file.txt");
             logger.Log("Hello!");
-            */
             #endregion
 
+            #region Z4
             ConsoleNotification notification = new ConsoleNotification("Tia", "Wednesday", "Today is wednesday.", 
-                                                                         new DateTime(2022, 4, 6), Category.INFO,
-                                                                         ConsoleColor.Magenta);
+                                                   new DateTime(2022, 4, 6), Category.INFO,ConsoleColor.Magenta);
             NotificationManager notificationManager = new NotificationManager();
             notificationManager.Display(notification);
+            #endregion
 
+            #region Z5,6,7
             NotificationBuilder builder = new NotificationBuilder();
             builder.SetText("Hello world :)");
             builder.SetColor(ConsoleColor.DarkBlue);
@@ -70,6 +69,7 @@ namespace LV3
             ConsoleNotification noteCopy= (ConsoleNotification)note.Clone();
             notificationManager.Display(note);
             notificationManager.Display(noteCopy);
+            #endregion
         }
     }
 }

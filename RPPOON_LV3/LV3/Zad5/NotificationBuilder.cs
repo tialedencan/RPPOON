@@ -6,7 +6,7 @@ using System.Text;
 namespace LV3.Zad5
 {
     class NotificationBuilder : IBuilder
-    {   //trebam defaultne vrijednosti atributa
+    {   
         private string author= "Mark";
         private string title= "New notification";
         private string text= "Notifications";

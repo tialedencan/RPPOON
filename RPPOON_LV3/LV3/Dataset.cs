@@ -55,5 +55,20 @@ namespace LV3
             }
             return dataCopy;
         }
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+
+            for (int i = 0; i < this.data.Count; i++)
+            {
+                for (int j = 0; j < this.data[i].Count; j++)
+                {
+                    sb.Append(data[i][j]);
+                }
+                sb.Append("\n");
+            }
+            return sb.ToString();
+        }
     }
 }
