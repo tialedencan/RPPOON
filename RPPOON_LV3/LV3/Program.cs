@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using LV3.Zad4;
+using LV3.Zad5;
 
 namespace LV3
 {
@@ -60,6 +61,15 @@ namespace LV3
                                                                          ConsoleColor.Magenta);
             NotificationManager notificationManager = new NotificationManager();
             notificationManager.Display(notification);
+
+            NotificationBuilder builder = new NotificationBuilder();
+            builder.SetText("Hello world :)");
+            builder.SetColor(ConsoleColor.DarkBlue);
+            ConsoleNotification note = builder.Build();
+            
+            ConsoleNotification noteCopy= (ConsoleNotification)note.Clone();
+            notificationManager.Display(note);
+            notificationManager.Display(noteCopy);
         }
     }
 }

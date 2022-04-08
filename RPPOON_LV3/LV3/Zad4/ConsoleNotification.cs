@@ -4,8 +4,7 @@ using System.Text;
 
 namespace LV3.Zad4
 {
-    public enum Category { ERROR, ALERT, INFO }
-    class ConsoleNotification
+    class ConsoleNotification:Prototype
     {
         public String Author { get; private set; }
         public String Title { get; private set; }
@@ -22,6 +21,11 @@ namespace LV3.Zad4
             this.Timestamp = time;
             this.Level = level;
             this.Color = color;
+        }
+
+        public Prototype Clone()
+        {
+            return (Prototype)this.MemberwiseClone();
         }
     }
 }

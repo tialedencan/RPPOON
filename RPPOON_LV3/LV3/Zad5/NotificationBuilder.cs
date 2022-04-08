@@ -7,12 +7,12 @@ namespace LV3.Zad5
 {
     class NotificationBuilder : IBuilder
     {   //trebam defaultne vrijednosti atributa
-        private string author;
-        private string title;
-        private string text;
-        private DateTime time;
-        private Category level;
-        private ConsoleColor color;
+        private string author= "Mark";
+        private string title= "New notification";
+        private string text= "Notifications";
+        private DateTime time= new DateTime(2022, 4, 8);
+        private Category level= Category.INFO;
+        private ConsoleColor color= ConsoleColor.DarkGreen;
         public ConsoleNotification Build()
         {
             return new ConsoleNotification(author, title, text, time, level, color);
