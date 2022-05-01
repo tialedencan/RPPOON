@@ -1,0 +1,14 @@
+D:\Faks\4.semestar\RPPOON\lv\LV5\Bridge\bin\Debug\netcoreapp3.1\Bridge.exe
+D:\Faks\4.semestar\RPPOON\lv\LV5\Bridge\bin\Debug\netcoreapp3.1\Bridge.deps.json
+D:\Faks\4.semestar\RPPOON\lv\LV5\Bridge\bin\Debug\netcoreapp3.1\Bridge.runtimeconfig.json
+D:\Faks\4.semestar\RPPOON\lv\LV5\Bridge\bin\Debug\netcoreapp3.1\Bridge.runtimeconfig.dev.json
+D:\Faks\4.semestar\RPPOON\lv\LV5\Bridge\bin\Debug\netcoreapp3.1\Bridge.dll
+D:\Faks\4.semestar\RPPOON\lv\LV5\Bridge\bin\Debug\netcoreapp3.1\Bridge.pdb
+D:\Faks\4.semestar\RPPOON\lv\LV5\Bridge\obj\Debug\netcoreapp3.1\Bridge.csproj.AssemblyReference.cache
+D:\Faks\4.semestar\RPPOON\lv\LV5\Bridge\obj\Debug\netcoreapp3.1\Bridge.GeneratedMSBuildEditorConfig.editorconfig
+D:\Faks\4.semestar\RPPOON\lv\LV5\Bridge\obj\Debug\netcoreapp3.1\Bridge.AssemblyInfoInputs.cache
+D:\Faks\4.semestar\RPPOON\lv\LV5\Bridge\obj\Debug\netcoreapp3.1\Bridge.AssemblyInfo.cs
+D:\Faks\4.semestar\RPPOON\lv\LV5\Bridge\obj\Debug\netcoreapp3.1\Bridge.csproj.CoreCompileInputs.cache
+D:\Faks\4.semestar\RPPOON\lv\LV5\Bridge\obj\Debug\netcoreapp3.1\Bridge.dll
+D:\Faks\4.semestar\RPPOON\lv\LV5\Bridge\obj\Debug\netcoreapp3.1\Bridge.pdb
+D:\Faks\4.semestar\RPPOON\lv\LV5\Bridge\obj\Debug\netcoreapp3.1\Bridge.genruntimeconfig.cache
