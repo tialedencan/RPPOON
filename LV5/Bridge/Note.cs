@@ -27,5 +27,9 @@ namespace Bridge
             message + "\n" + this.theme.GetFooter(width);
         }
         public abstract void Show();
+
+        public virtual void RemoveFromGroup(string personName){ }
+        public virtual void AddToGroup(string personName){ }
+        
     }
 }

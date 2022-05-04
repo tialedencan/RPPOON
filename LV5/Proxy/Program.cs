@@ -15,6 +15,9 @@ namespace Proxy
             printer.PrintData(protectionProxy);
             Console.WriteLine("Virtual Proxy:");
             printer.PrintData(virtualProxy);
+            LoggingProxyDataset loggingProxyDataset = new LoggingProxyDataset("message");
+            Console.WriteLine("Logging Proxy");
+            printer.PrintData(loggingProxyDataset);
 
         }
     }

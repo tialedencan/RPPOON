@@ -12,21 +12,38 @@ namespace Bridge
             this.groupMembers = new List<string>();
         }
 
-        public void AddToGroup(string personName)
+        public override void AddToGroup(string personName)
         {
             groupMembers.Add(personName);
         }
-        public void RemoveFromGroup(string personName)
+        public override void RemoveFromGroup(string personName)
         {
             groupMembers.Remove(personName);
         }
-        public override void Show()
+
+     /* public string GetMembers() //nez treba li
+        {
+            StringBuilder sb = new StringBuilder();
+            foreach (string member in groupMembers)
+            {
+                sb.Append(member +", ");
+            }
+            return sb.ToString();
+        }*/
+        public override void Show() //mozda tu trebam prikazati ljude
         {
             this.ChangeColor();
             Console.WriteLine("Group: ");
             string framedMessage = this.GetFramedMessage();
             Console.WriteLine(framedMessage);
+            
+            foreach(string member in groupMembers)
+            {
+                Console.Write(member + " ");
+            }
+               
             Console.ResetColor();
+            
         }
     }
 }
