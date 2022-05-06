@@ -6,35 +6,35 @@ namespace Bridge
     {
         static void Main(string[] args)
         {
+            ITheme lightTheme = new LightTheme();
             ITheme darkTheme = new DarkTheme();
-            Note note = new ReminderNote("Hello",darkTheme);
+            ReminderNote note = new ReminderNote("Remind me", lightTheme);
+            ReminderNote noteDark = new ReminderNote("Darker", darkTheme);
+
+            note.Show();
+            noteDark.Show();
+
+            note.ChangeTheme(darkTheme);
             note.Show();
 
-            ITheme lightTheme=new LightTheme();
-            Note lightNote = new ReminderNote("Funny", lightTheme);
-            lightNote.Show();
-
-            Note groupNote=new GroupNote("Group",lightTheme);
-            groupNote.Show();
+            //z6
+            GroupNote groupNote = new GroupNote("Grupica prijatelja", lightTheme);
             groupNote.AddToGroup("Mark");
-            groupNote.AddToGroup("Ana");//nije jasno treba li se pristupiti grupi i ovo kako bi proradilo
-            //morala bi mijenjati note (dodati) pa bi kršilo OCP
-            //groupNote.GetMembers();
+            groupNote.AddToGroup("Lucisa");
+            groupNote.Show();
+            groupNote.RemoveFromGroup("Lucisa");
+            groupNote.Show();
 
-            Note darkGroupNote = new GroupNote("Darkers", darkTheme);
-            darkGroupNote.Show();
-
-            //z7 za izmjene bi dodala atribut teme koja se čuva za sve note-ove
-            Notebook notebook = new Notebook();
+            //z7
+            Notebook notebook = new Notebook(lightTheme);
             notebook.AddNote(note);
-            notebook.AddNote(lightNote);
+            notebook.AddNote(noteDark);
             notebook.AddNote(groupNote);
             notebook.Display();
             notebook.ChangeTheme(darkTheme);
+            notebook.AddNote(new ReminderNote("Pozdrav", lightTheme));
             notebook.Display();
-            notebook.ChangeTheme(lightTheme);
-            notebook.Display();
-            
+
         }
     }
 }

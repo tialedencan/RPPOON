@@ -28,8 +28,5 @@ namespace Bridge
         }
         public abstract void Show();
 
-        public virtual void RemoveFromGroup(string personName){ }
-        public virtual void AddToGroup(string personName){ }
-        
     }
 }

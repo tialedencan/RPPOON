@@ -15,5 +15,9 @@ namespace Bridge
             Console.WriteLine(framedMessage);
             Console.ResetColor();
         }
+        public void ChangeTheme(ITheme theme)
+        {
+            base.Theme = theme;
+        }
     }
 }

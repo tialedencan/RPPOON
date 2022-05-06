@@ -10,15 +10,18 @@ namespace Proxy
         public void PrintData(IDataset dataset)
         {
             ReadOnlyCollection<List<string>> data = dataset.GetData();
-            foreach(var item in data)
+            if (data == null) { Console.WriteLine("Unauthenticated user"); }
+            else
             {
-                foreach(string value in item)
+                foreach (var item in data)
                 {
-                    Console.Write(value + " ");
+                    foreach (string value in item)
+                    {
+                        Console.Write(value + " ");
+                    }
+                    Console.WriteLine();
                 }
-               Console.WriteLine();
-            }
-                
+            }   
         }
         
     }

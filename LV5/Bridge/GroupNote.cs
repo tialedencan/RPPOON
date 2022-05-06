@@ -21,16 +21,7 @@ namespace Bridge
             groupMembers.Remove(personName);
         }
 
-     /* public string GetMembers() //nez treba li
-        {
-            StringBuilder sb = new StringBuilder();
-            foreach (string member in groupMembers)
-            {
-                sb.Append(member +", ");
-            }
-            return sb.ToString();
-        }*/
-        public override void Show() //mozda tu trebam prikazati ljude
+        public override void Show() 
         {
             this.ChangeColor();
             Console.WriteLine("Group: ");
@@ -41,9 +32,13 @@ namespace Bridge
             {
                 Console.Write(member + " ");
             }
-               
+            Console.WriteLine();
+
             Console.ResetColor();
-            
+        }
+        public void ChangeTheme(ITheme theme)
+        {
+            base.Theme = theme;
         }
     }
 }

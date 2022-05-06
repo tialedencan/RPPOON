@@ -4,13 +4,29 @@ using System.Text;
 
 namespace Bridge
 {
+ 
     class Notebook
     {
         private List<Note> notes;
-        public Notebook() { this.notes = new List<Note>(); }
-        public void AddNote(Note note) { this.notes.Add(note); }
+        private ITheme theme;
+        public Notebook() { 
+
+            this.notes = new List<Note>();
+            this.theme = new DarkTheme();
+        }
+        public Notebook(ITheme theme) 
+        {   
+            this.notes = new List<Note>(); 
+            this.theme = theme;
+        }
+        public void AddNote(Note note) {
+
+            note.Theme = theme;
+            this.notes.Add(note); 
+        }
         public void ChangeTheme(ITheme theme)
         {
+            this.theme = theme;
             foreach (Note note in this.notes)
             {
                 note.Theme = theme;

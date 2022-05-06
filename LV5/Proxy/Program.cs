@@ -6,16 +6,22 @@ namespace Proxy
     {
         static void Main(string[] args)
         {
-            User user = User.GenerateUser("John");
-            ProtectionProxyDataset protectionProxy = new ProtectionProxyDataset(user);
+            
+             DataConsolePrinter printer = new DataConsolePrinter();
             VirtualProxyDataset virtualProxy = new VirtualProxyDataset("sensitiveData.csv");
 
-            DataConsolePrinter printer = new DataConsolePrinter();
+            User user = User.GenerateUser("John");
+            User secondUser = User.GenerateUser("Mark");
             Console.WriteLine("Protection Proxy:");
+            ProtectionProxyDataset protectionProxy = new ProtectionProxyDataset(user);
+            ProtectionProxyDataset protectionProxyForSecundUser = new ProtectionProxyDataset(secondUser);
             printer.PrintData(protectionProxy);
+            printer.PrintData(protectionProxyForSecundUser);
+           
             Console.WriteLine("Virtual Proxy:");
             printer.PrintData(virtualProxy);
-            LoggingProxyDataset loggingProxyDataset = new LoggingProxyDataset("message");
+
+            LoggingProxyDataset loggingProxyDataset = new LoggingProxyDataset("sensitiveData.csv","message");
             Console.WriteLine("Logging Proxy");
             printer.PrintData(loggingProxyDataset);
 

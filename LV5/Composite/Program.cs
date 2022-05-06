@@ -20,7 +20,7 @@ namespace Composite
             Console.WriteLine($"Weight: {shoeBox.Weight}");
 
             ShippingService deliveryExpress = new ShippingService(0.01);
-            Console.WriteLine($"Shipping cost: {deliveryExpress.CalculateShippingCost(shoeBox.Weight)}");
+            Console.WriteLine($"Shipping cost: {deliveryExpress.CalculateShippingCost(shoeBox)}");
         }
     }
 }

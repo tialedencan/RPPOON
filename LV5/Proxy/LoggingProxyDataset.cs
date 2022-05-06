@@ -5,27 +5,25 @@ using System.Text;
 
 namespace Proxy
 {
-    /*Napisati proxy za logiranje dohvaćanja podataka objekta klase Dataset. Za potrebe logiranja napisati
-singleton ConsoleLogger i koristiti ga u proxy-iju. Bilježiti uz odgovarajuću poruku i vrijeme pristupa. Za
-potrebe testiranja može se iskoristiti primjer CSV datoteke u nastavku.*/
+   
     class LoggingProxyDataset : IDataset
     {
         private Dataset dataset;
         private string filepath;
-        private int attemptsToAccessCounter;
-        private DateTime accessTime;
+        private ConsoleLogger logger;
+        private string message;
 
-        public LoggingProxyDataset(string message)
+        public LoggingProxyDataset(string filepath, string message)
         {
-            this.filepath= "sensitiveData.csv";
+            this.filepath= filepath;
+            this.message = message;
             
-            this.attemptsToAccessCounter = 0;
-            this.accessTime = DateTime.Now;
             
         }
         public ReadOnlyCollection<List<string>> GetData()
         { 
-            ConsoleLogger.GetInstance();
+            this.logger=ConsoleLogger.GetInstance();
+            logger.Log(this.message);
 
             if (dataset == null)
             {

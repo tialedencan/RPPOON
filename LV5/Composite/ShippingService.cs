@@ -11,9 +11,9 @@ namespace Composite
         {
             this.unitPricePerMass = unitPricePerMass;
         }
-        public double CalculateShippingCost(double weight)
+        public double CalculateShippingCost(IShipable item)
         {
-            return weight * unitPricePerMass;
+            return item.Weight * unitPricePerMass;
         }
 
     }
