@@ -4,7 +4,8 @@ using System.Text;
 
 namespace Memento
 {
-    internal class CareTaker
+    class CareTaker
     {
+        public Memento PreviousState { get; set; }
     }
 }
