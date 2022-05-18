@@ -1,4 +1,5 @@
 ﻿using System;
+using ChainOfResponsibility.Z6;
 
 namespace ChainOfResponsibility
 {
@@ -10,11 +11,22 @@ namespace ChainOfResponsibility
             FileLogger fileLogger =
             new FileLogger(MessageType.ERROR | MessageType.WARNING, "logFile.txt");
 
-            ConsoleLogger consoleLogger = new ConsoleLogger(MessageType.INFO);
             logger.SetNextLogger(fileLogger);
-            logger.SetNextLogger(consoleLogger);
             logger.Log("It is shiny outside!", MessageType.INFO);
             logger.Log("Warning", MessageType.ERROR);
+
+            //Z6
+            StringChecker checker = new StringDigitChecker();
+            checker.SetNext(new StringLengthChecker());
+            checker.SetNext(new StringUpperCaseChecker());
+            checker.SetNext(new StringLowerCaseChecker());
+            Console.WriteLine(checker.Check("Ola Maria4"));
+            StringChecker upperCaseChecker=new StringUpperCaseChecker();
+            Console.WriteLine(upperCaseChecker.Check("olamaria"));
+            StringChecker stringLongerThan15Caracters=new StringLengthChecker();
+            Console.WriteLine(stringLongerThan15Caracters.Check("ferit"));
+
+
         }
     }
 }

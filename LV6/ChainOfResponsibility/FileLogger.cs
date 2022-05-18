@@ -14,9 +14,7 @@ namespace ChainOfResponsibility
         }
         protected override void WriteMessage(string message, MessageType type)
         {
-            //tip i vrijeme zapisa
             File.WriteAllTextAsync(filePath, $"{type}: {DateTime.Now} - {message}");
-           
         }
     }
 }
