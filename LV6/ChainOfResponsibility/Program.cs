@@ -26,6 +26,11 @@ namespace ChainOfResponsibility
             StringChecker stringLongerThan15Caracters=new StringLengthChecker();
             Console.WriteLine(stringLongerThan15Caracters.Check("ferit"));
 
+            //Z7
+            PasswordValidator passwordValidator = new PasswordValidator(upperCaseChecker);
+            StringChecker digitChecker=new StringDigitChecker();
+            passwordValidator.AddStringChecker(digitChecker);
+            Console.WriteLine(passwordValidator.IsValidPassword("Eduard123"));
 
         }
     }
