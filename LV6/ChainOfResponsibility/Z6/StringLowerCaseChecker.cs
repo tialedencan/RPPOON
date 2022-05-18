@@ -8,9 +8,9 @@ namespace ChainOfResponsibility.Z6
     {
         protected override bool PerformCheck(string stringToCheck)
         {
-            for (int i=0; i<stringToCheck.Length; i++)
+            foreach (char c in stringToCheck)
             {
-                if (stringToCheck.ToLower()[i].Equals(stringToCheck[i]))
+                if (c >= 97 && c <= 122)
                 {
                     return true;
                 }

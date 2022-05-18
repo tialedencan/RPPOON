@@ -8,17 +8,16 @@ namespace ChainOfResponsibility.Z6
     {
         protected override bool PerformCheck(string stringToCheck)
         {
-            if (stringToCheck.Contains("1") || stringToCheck.Contains("2") || stringToCheck.Contains("3") ||
-                stringToCheck.Contains("4") || stringToCheck.Contains("5") || stringToCheck.Contains("6") ||
-                stringToCheck.Contains("7") || stringToCheck.Contains("8") || stringToCheck.Contains("9") ||
-                stringToCheck.Contains("0"))
-            {
-                return true;
+            foreach (char c in stringToCheck) {
+
+                if (c >= 48 && c <= 57)
+                {
+                    return true;
+                }
+
             }
-            else
-            {
-                return false;
-            }
+            return false;
+           
         }
     }
 }
