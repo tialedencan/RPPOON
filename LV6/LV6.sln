@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iterator", "Iterator\Iterator.csproj", "{3DCF3422-9B18-4CB2-A7E4-2B98EB66E25C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Iterator", "Iterator\Iterator.csproj", "{3DCF3422-9B18-4CB2-A7E4-2B98EB66E25C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memento", "Memento\Memento.csproj", "{9BD8C8B4-FA32-46D3-B2C9-227DE9B31DEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Memento", "Memento\Memento.csproj", "{9BD8C8B4-FA32-46D3-B2C9-227DE9B31DEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainOfResponsibility", "ChainOfResponsibility\ChainOfResponsibility.csproj", "{440A27BA-0866-4740-8D5E-2F694667261D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{9BD8C8B4-FA32-46D3-B2C9-227DE9B31DEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9BD8C8B4-FA32-46D3-B2C9-227DE9B31DEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9BD8C8B4-FA32-46D3-B2C9-227DE9B31DEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{440A27BA-0866-4740-8D5E-2F694667261D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{440A27BA-0866-4740-8D5E-2F694667261D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{440A27BA-0866-4740-8D5E-2F694667261D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{440A27BA-0866-4740-8D5E-2F694667261D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
