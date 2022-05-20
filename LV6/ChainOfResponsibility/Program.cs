@@ -13,24 +13,38 @@ namespace ChainOfResponsibility
 
             logger.SetNextLogger(fileLogger);
             logger.Log("It is shiny outside!", MessageType.INFO);
-            logger.Log("Warning", MessageType.ERROR);
+            logger.Log("Error", MessageType.ERROR);
+            logger.Log("Warning", MessageType.WARNING);
 
             //Z6
             StringChecker checker = new StringDigitChecker();
-            checker.SetNext(new StringLengthChecker());
-            checker.SetNext(new StringUpperCaseChecker());
-            checker.SetNext(new StringLowerCaseChecker());
-            Console.WriteLine(checker.Check("Ola Maria4"));
-            StringChecker upperCaseChecker=new StringUpperCaseChecker();
-            Console.WriteLine(upperCaseChecker.Check("olamaria"));
-            StringChecker stringLongerThan15Caracters=new StringLengthChecker();
-            Console.WriteLine(stringLongerThan15Caracters.Check("ferit"));
+            StringChecker lengthChecker = new StringLengthChecker();
+            StringChecker upperCaseChecker = new StringUpperCaseChecker();
+            StringChecker lowerCaseChecker = new StringLowerCaseChecker();
+
+            checker.SetNext(lengthChecker);
+            lengthChecker.SetNext(upperCaseChecker);
+            upperCaseChecker.SetNext(lowerCaseChecker);
+
+            Console.WriteLine(checker.Check("AbCd14#"));
+            Console.WriteLine(checker.Check("AbC1"));
+            Console.WriteLine(checker.Check("sdfebd14#"));
+            Console.WriteLine(checker.Check("AC14##"));
+            Console.WriteLine(checker.Check("AbCduif#"));
+
 
             //Z7
-            PasswordValidator passwordValidator = new PasswordValidator(upperCaseChecker);
             StringChecker digitChecker=new StringDigitChecker();
-            passwordValidator.AddStringChecker(digitChecker);
-            Console.WriteLine(passwordValidator.IsValidPassword("Eduard123"));
+            StringChecker lengthChecker2 = new StringLengthChecker();
+            StringChecker upperCaseChecker2 = new StringUpperCaseChecker();
+            StringChecker lowerCaseChecker2 = new StringLowerCaseChecker();
+
+            PasswordValidator passwordValidator = new PasswordValidator(digitChecker);
+            passwordValidator.AddStringChecker(lengthChecker2);
+            passwordValidator.AddStringChecker(upperCaseChecker2);
+            passwordValidator.AddStringChecker(lowerCaseChecker2);
+            Console.WriteLine("Passsword valid: " + passwordValidator.IsValidPassword("Eduard123"));
+
 
         }
     }

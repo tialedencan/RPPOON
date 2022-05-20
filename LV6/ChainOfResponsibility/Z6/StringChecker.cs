@@ -6,17 +6,17 @@ namespace ChainOfResponsibility.Z6
 {
     abstract class StringChecker
     {
-        private StringChecker next;
+        public StringChecker Next { get; private set; }
         public void SetNext(StringChecker next)
         {
-            this.next = next;
+            this.Next = next;
         }
         public bool Check(string stringToCheck)
         {
             bool result = this.PerformCheck(stringToCheck);
-            if (this.next != null && result == true)
+            if (this.Next != null && result == true)
             {
-                return this.next.Check(stringToCheck);
+                return this.Next.Check(stringToCheck);
             }
             return result;
         }

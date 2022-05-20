@@ -7,7 +7,7 @@ namespace ChainOfResponsibility
 {
     class PasswordValidator
     {
-        StringChecker passwordChecker;
+       private StringChecker passwordChecker;
 
         public PasswordValidator(StringChecker firstChecker)
         {
@@ -16,6 +16,10 @@ namespace ChainOfResponsibility
 
         public void AddStringChecker(StringChecker checker)
         {
+            while (passwordChecker.Next != null)
+            {
+                passwordChecker=passwordChecker.Next;
+            }
             passwordChecker.SetNext(checker);
         }
 

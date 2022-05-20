@@ -11,11 +11,11 @@ namespace Memento
             Console.WriteLine(toDoItem);
             Memento memento = toDoItem.StoreState();
             CareTaker careTaker= new CareTaker();
-            careTaker.previousStates.Add(memento);
+            careTaker.SetMemento(memento);
             ToDoItem vet = new ToDoItem("Veterinarian", "Bring a pet", new DateTime(2007, 10, 2)); 
             memento=vet.StoreState();
             Console.WriteLine(vet);
-            careTaker.previousStates.Add(memento);
+            careTaker.SetMemento(memento);
 
             toDoItem.Rename("Happy birthday");
             toDoItem.ChangeTask("Throw a party");
@@ -28,18 +28,43 @@ namespace Memento
             vet.ChangeTask("Appointment for Lex.");
             memento=vet.StoreState();
 
+            //LV
+            ToDoItem item = new ToDoItem("Solve", "Solve the problem", new DateTime(2022, 6, 9));
+            CareTaker cTaker = new CareTaker();
+            Console.WriteLine(item);
+            Memento mementoForSecundItemToDo = item.StoreState();
+            cTaker.SetMemento(mementoForSecundItemToDo);
+            item.ChangeTimeDue(new DateTime(2033, 12, 12));
+            item.Rename("#####");
+            Console.WriteLine(item);
+            item.RestoreState(cTaker.GetMemento(0));
+            Console.WriteLine(item);
+
             //Z4
             BankAccount account = new BankAccount("Mark", "Park Street 10", 1500.2m);
-            MementoBankAccount mementoBank=account.SetState();
+            MementoBankAccount mementoBank=account.StoreState();
             CareTakerForBankAccount care= new CareTakerForBankAccount();
-            care.PreviousState = mementoBank;
+            care.StoreMemento(mementoBank);
             Console.WriteLine(account);
             account.ChangeOwnerAddress("Olive Street 4");
             Console.WriteLine(account);
 
             account.RestoreState(mementoBank);
             Console.WriteLine(account);
-            account.RestoreState(care.PreviousState);
+            account.RestoreState(care.GetMemento(0));
+            Console.WriteLine(account);
+
+         
+            //LV
+            BankAccount accountB = new BankAccount("Tia", "Park Street 4", 120.5m);
+            CareTakerForBankAccount careTakerForBankAccount = new CareTakerForBankAccount();
+            Console.WriteLine(accountB);
+            MementoBankAccount mementoAccount = accountB.StoreState();
+            careTakerForBankAccount.StoreMemento(mementoAccount);
+            account.UpdateBalance(1250.7m);
+            account.ChangeOwnerAddress("Happy Street 5");
+            Console.WriteLine(account);
+            account.RestoreState(careTakerForBankAccount.GetMemento(0));
             Console.WriteLine(account);
         }
     }

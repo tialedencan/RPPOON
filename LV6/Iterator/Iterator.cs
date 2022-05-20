@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Iterator
 {
-    class Iterator:IAbstractIterator
+    class Iterator:IAbstractIterator<Note>
     {
         private Notebook notebook;
         private int currentPosition;
@@ -14,7 +14,7 @@ namespace Iterator
             this.currentPosition = 0;
         }
         public bool IsDone { get { return this.currentPosition >= this.notebook.Count; } }
-        public Note Current { get { return this.notebook[this.currentPosition]; } }
+        public Note GetCurrent { get { return this.notebook[this.currentPosition]; } }
         public Note First() { return this.notebook[0]; }
         public Note Next()
         {

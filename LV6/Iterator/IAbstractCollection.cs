@@ -4,8 +4,8 @@ using System.Text;
 
 namespace Iterator
 {
-    interface IAbstractCollection
+    interface IAbstractCollection<T>
     {
-        IAbstractIterator GetIterator();
+        IAbstractIterator<T> GetIterator();
     }
 }

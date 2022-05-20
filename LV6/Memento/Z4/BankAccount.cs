@@ -28,7 +28,7 @@ namespace Memento.Z4
         {
             return $"Name:{ownerName}, address:{ownerAddress}, balance:{balance}";
         }
-        public MementoBankAccount SetState()
+        public MementoBankAccount StoreState()
         {
             return new MementoBankAccount(this.ownerName, this.ownerAddress, this.balance);
         }

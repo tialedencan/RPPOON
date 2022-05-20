@@ -4,11 +4,11 @@ using System.Text;
 
 namespace Iterator
 {
-    interface IAbstractIterator
+    interface IAbstractIterator <T>
     {
-        Note First();
-        Note Next();
+        T First();
+        T Next();
         bool IsDone { get; }
-        Note Current { get; }
+        T GetCurrent { get; }
     }
 }

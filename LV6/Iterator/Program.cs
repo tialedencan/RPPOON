@@ -13,12 +13,12 @@ namespace Iterator
             notebook.AddNote(note);
             notebook.AddNote(new Note("Secret message", "#####"));
             notebook.AddNote(new Note("Nice day", "Sun is shining!"));
-            Iterator iterator = new Iterator(notebook);
-            do
+            IAbstractIterator<Note> iterator = notebook.GetIterator();
+         
+            for (Note n = iterator.First(); iterator.IsDone != true; n = iterator.Next())
             {
-                iterator.Current.Show();
-
-            } while (iterator.Next() != null);
+                n.Show();
+            }
 
             //Z2
 
@@ -27,12 +27,13 @@ namespace Iterator
             box.AddProduct(new Product("Apples", 4.2));
             box.AddProduct(new Product("Juice", 1.5));
 
-            BoxIterator boxIterator = new BoxIterator(box);
+            IAbstractIterator<Product> boxIterator = box.GetIterator();
             do
             {
                 boxIterator.GetCurrent.Show();
 
             }while(boxIterator.Next() != null);
+
 
         }
     }

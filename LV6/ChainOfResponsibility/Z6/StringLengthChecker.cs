@@ -8,7 +8,7 @@ namespace ChainOfResponsibility.Z6
     {
         protected override bool PerformCheck(string stringToCheck)
         {
-            if (stringToCheck.Length > 15)
+            if (stringToCheck.Length > 5)
             {
                 return true;
             }

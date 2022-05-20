@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Iterator.Z2
 {
-    class Box:IAbstractCollection
+    class Box:IAbstractCollection<Product>
     {
         private List<Product> products;
         public Box() { this.products = new List<Product>(); }
@@ -15,7 +15,7 @@ namespace Iterator.Z2
         public void AddProduct(Product product) { this.products.Add(product); }
         public void RemoveProduct(Product product) { this.products.Remove(product); }
 
-        public IAbstractIterator GetIterator()
+        public IAbstractIterator<Product> GetIterator()
         {
             return new BoxIterator(this);
         }

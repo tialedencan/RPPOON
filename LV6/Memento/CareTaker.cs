@@ -6,11 +6,23 @@ namespace Memento
 {
     class CareTaker
     {
-        public List<Memento> previousStates { get; set; }
-
+        private List<Memento> previousStates;
+        
         public CareTaker()
         {
             previousStates = new List<Memento>();
+        }
+        public Memento GetMemento(int index)
+        {
+            if (previousStates[index] == null)
+            {
+                throw new ArgumentNullException("Index out of range");
+            }
+            return previousStates[index];
+        }
+        public void SetMemento(Memento memento)
+        {
+            previousStates.Add(memento);
         }
     }
 }

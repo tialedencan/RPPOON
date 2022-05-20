@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Iterator.Z2
 {
-    class BoxIterator:IAbstractIterator
+    class BoxIterator:IAbstractIterator<Product>
     {
         private Box box;
         private int currentPosition;
