@@ -9,6 +9,8 @@ namespace Strategy
         private double[] sequence;
         private int sequenceSize;
         private SortStrategy sortStrategy;
+        private ISearchStrategy searchStrategy;
+        private double requiredNumberForSearch;
         public NumberSequence(int sequenceSize)
         {
             this.sequenceSize = sequenceSize;
@@ -35,6 +37,18 @@ namespace Strategy
                 builder.Append(element).Append(Environment.NewLine);
             }
             return builder.ToString();
+        }
+        public void SetSearchStrategy(ISearchStrategy strategy)
+        {
+            this.searchStrategy = strategy;
+        }
+        public void SetRequiredNumberForSearch(double number)
+        {
+            this.requiredNumberForSearch= number;
+        }
+        public int Search()
+        {
+            return this.searchStrategy.Search(this.sequence,requiredNumberForSearch);
         }
     }
 }
