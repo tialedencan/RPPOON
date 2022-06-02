@@ -10,7 +10,7 @@ namespace Visitor
         {
             if (DVDItem.Type == DVDType.SOFTWARE)
             {
-                return double.NaN;
+                return DVDItem.Price;
             }
             return DVDItem.Price * 0.1;
         }

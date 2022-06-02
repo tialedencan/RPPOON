@@ -16,6 +16,10 @@ namespace Strategy
             this.sequenceSize = sequenceSize;
             this.sequence = new double[sequenceSize];
         }
+        public NumberSequence(SortStrategy sortStrategy, double[] array) : this(array.Length)
+        {
+            this.sortStrategy = sortStrategy;
+        }
         public NumberSequence(double[] array) : this(array.Length)
         {
             array.CopyTo(this.sequence, 0);

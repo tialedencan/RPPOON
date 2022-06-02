@@ -21,6 +21,13 @@ namespace Visitor
             RentVisitor visitorForRentingItems = new RentVisitor();
             Console.WriteLine(visitorForRentingItems.Visit(software));
             Console.WriteLine(book.Accept(visitorForRentingItems));
+
+            Cart cart = new Cart(visitorForRentingItems);
+            cart.AddItem(book);
+            cart.AddItem(vhs);
+            cart.AddItem(software);
+            cart.AddItem(dvd);
+            Console.WriteLine(cart.Accept());
         
         }
     }
