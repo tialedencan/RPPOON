@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Observer
 {
-    internal interface Logger
+    interface Logger
     {
+        void Log(SimpleSystemDataProvider provider);
     }
 }

@@ -10,6 +10,17 @@ namespace Observer
     {
         static void Main(string[] args)
         {
+            SimpleSystemDataProvider dataProvider = new SimpleSystemDataProvider();
+            dataProvider.Attach(new ConsoleLogger());
+            int counter = 0;
+            while (true)
+            {
+                dataProvider.Notify();
+                counter++;
+                if (counter > 25) break;
+                System.Threading.Thread.Sleep(1000);
+
+            }
         }
     }
 }

@@ -27,7 +27,13 @@ namespace Observer
         }
         public float GetAvailableRAM()
         {
-            // implementation missing
+            float availableRAM = this.AvailableRAM;
+            if (availableRAM != this.previousRAMAvailable)
+            {
+                this.Notify();
+            }
+            this.previousRAMAvailable = availableRAM;
+            return availableRAM;
         }
     }
 }

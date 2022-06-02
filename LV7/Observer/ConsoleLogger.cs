@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Observer
 {
-    internal class ConsoleLogger
+    class ConsoleLogger:Logger
     {
+        public void Log(SimpleSystemDataProvider provider)
+        {
+            Console.WriteLine(DateTime.Now + "-> CPU load: " +
+             provider.CPULoad + " Available RAM: " + provider.AvailableRAM);
+        }
     }
 }

@@ -1,0 +1,8 @@
+D:\Faks\4.semestar\RPPOON\lv\LV7\Observer\bin\Debug\Observer.exe.config
+D:\Faks\4.semestar\RPPOON\lv\LV7\Observer\bin\Debug\Observer.exe
+D:\Faks\4.semestar\RPPOON\lv\LV7\Observer\bin\Debug\Observer.pdb
+D:\Faks\4.semestar\RPPOON\lv\LV7\Observer\obj\Debug\Observer.csproj.AssemblyReference.cache
+D:\Faks\4.semestar\RPPOON\lv\LV7\Observer\obj\Debug\Observer.csproj.SuggestedBindingRedirects.cache
+D:\Faks\4.semestar\RPPOON\lv\LV7\Observer\obj\Debug\Observer.csproj.CoreCompileInputs.cache
+D:\Faks\4.semestar\RPPOON\lv\LV7\Observer\obj\Debug\Observer.exe
+D:\Faks\4.semestar\RPPOON\lv\LV7\Observer\obj\Debug\Observer.pdb
