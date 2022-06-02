@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Observer
 {
-    class SystemDataProvider:SimpleSytemDataProvider
+    class SystemDataProvider:SimpleSystemDataProvider
     {
         private float previousCPULoad;
         private float previousRAMAvailable;
@@ -26,8 +28,6 @@ namespace Observer
         public float GetAvailableRAM()
         {
             // implementation missing
-            return previousRAMAvailable;
-
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Observer
 {
-    internal class FileLogger
+    internal class SimpleSystemDataProvider
     {
     }
 }
