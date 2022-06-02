@@ -1,0 +1,14 @@
+D:\Faks\4.semestar\RPPOON\lv\LV7\Strategy\bin\Debug\netcoreapp3.1\Strategy.exe
+D:\Faks\4.semestar\RPPOON\lv\LV7\Strategy\bin\Debug\netcoreapp3.1\Strategy.deps.json
+D:\Faks\4.semestar\RPPOON\lv\LV7\Strategy\bin\Debug\netcoreapp3.1\Strategy.runtimeconfig.json
+D:\Faks\4.semestar\RPPOON\lv\LV7\Strategy\bin\Debug\netcoreapp3.1\Strategy.runtimeconfig.dev.json
+D:\Faks\4.semestar\RPPOON\lv\LV7\Strategy\bin\Debug\netcoreapp3.1\Strategy.dll
+D:\Faks\4.semestar\RPPOON\lv\LV7\Strategy\bin\Debug\netcoreapp3.1\Strategy.pdb
+D:\Faks\4.semestar\RPPOON\lv\LV7\Strategy\obj\Debug\netcoreapp3.1\Strategy.csproj.AssemblyReference.cache
+D:\Faks\4.semestar\RPPOON\lv\LV7\Strategy\obj\Debug\netcoreapp3.1\Strategy.GeneratedMSBuildEditorConfig.editorconfig
+D:\Faks\4.semestar\RPPOON\lv\LV7\Strategy\obj\Debug\netcoreapp3.1\Strategy.AssemblyInfoInputs.cache
+D:\Faks\4.semestar\RPPOON\lv\LV7\Strategy\obj\Debug\netcoreapp3.1\Strategy.AssemblyInfo.cs
+D:\Faks\4.semestar\RPPOON\lv\LV7\Strategy\obj\Debug\netcoreapp3.1\Strategy.csproj.CoreCompileInputs.cache
+D:\Faks\4.semestar\RPPOON\lv\LV7\Strategy\obj\Debug\netcoreapp3.1\Strategy.dll
+D:\Faks\4.semestar\RPPOON\lv\LV7\Strategy\obj\Debug\netcoreapp3.1\Strategy.pdb
+D:\Faks\4.semestar\RPPOON\lv\LV7\Strategy\obj\Debug\netcoreapp3.1\Strategy.genruntimeconfig.cache

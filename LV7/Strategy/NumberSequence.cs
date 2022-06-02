@@ -10,7 +10,7 @@ namespace Strategy
         private int sequenceSize;
         private SortStrategy sortStrategy;
         private ISearchStrategy searchStrategy;
-        private double requiredNumberForSearch;
+        
         public NumberSequence(int sequenceSize)
         {
             this.sequenceSize = sequenceSize;
@@ -42,13 +42,11 @@ namespace Strategy
         {
             this.searchStrategy = strategy;
         }
-        public void SetRequiredNumberForSearch(double number)
+      
+        public int Search(double numberToSearchFor)
         {
-            this.requiredNumberForSearch= number;
+            return this.searchStrategy.Search(this.sequence,numberToSearchFor);
         }
-        public int Search()
-        {
-            return this.searchStrategy.Search(this.sequence,requiredNumberForSearch);
-        }
+       
     }
 }
