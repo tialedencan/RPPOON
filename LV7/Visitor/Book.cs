@@ -9,9 +9,19 @@ namespace Visitor
         public string Title { get; private set; }
         public double Price { get; private set; }
 
+        public Book(string title, double price)
+        {
+            Title = title;
+            Price = price;
+        }
+        public override string ToString()
+        {
+            return  "Book: " + this.Title +
+            Environment.NewLine + " -> Price: " + this.Price;
+        }
         public double Accept(IVisitor visitor)
         {
-            throw new NotImplementedException();
+            return visitor.Visit(this);
         }
     }
 }

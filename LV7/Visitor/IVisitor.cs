@@ -4,7 +4,10 @@ using System.Text;
 
 namespace Visitor
 {
-    internal interface IVisitor
+    interface IVisitor
     {
+        double Visit(DVD DVDItem);
+        double Visit(VHS VHSItem);
+        double Visit(Book book);
     }
 }
