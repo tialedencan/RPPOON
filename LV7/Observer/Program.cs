@@ -10,7 +10,7 @@ namespace Observer
     {
         static void Main(string[] args)
         {
-            SimpleSystemDataProvider dataProvider = new SimpleSystemDataProvider();
+            SimpleSystemDataProvider dataProvider = new SystemDataProvider();
             dataProvider.Attach(new ConsoleLogger());
             int counter = 0;
             while (true)

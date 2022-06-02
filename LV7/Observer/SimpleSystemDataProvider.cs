@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Observer
 {
-    class SimpleSystemDataProvider
+    abstract class SimpleSystemDataProvider
     {
         private System.Diagnostics.PerformanceCounter cpuCounter;
         private System.Diagnostics.PerformanceCounter ramCounter;
