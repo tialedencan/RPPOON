@@ -6,6 +6,6 @@ namespace Strategy
 {
     interface ISearchStrategy
     {
-        int Search(double[] array, double requestedNumber);
+        int Find(double[] array, double requestedNumber);
     }
 }

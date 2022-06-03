@@ -11,16 +11,15 @@ namespace Strategy
         private SortStrategy sortStrategy;
         private ISearchStrategy searchStrategy;
         
-        public NumberSequence(int sequenceSize)
+        public NumberSequence(int sequenceSize,SortStrategy sortStrategy,ISearchStrategy searchStrategy)
         {
             this.sequenceSize = sequenceSize;
             this.sequence = new double[sequenceSize];
-        }
-        public NumberSequence(SortStrategy sortStrategy, double[] array) : this(array.Length)
-        {
             this.sortStrategy = sortStrategy;
+            this.searchStrategy = searchStrategy;
         }
-        public NumberSequence(double[] array) : this(array.Length)
+        
+        public NumberSequence(double[] array, SortStrategy sortStrategy, ISearchStrategy searchStrategy) : this(array.Length, sortStrategy, searchStrategy)
         {
             array.CopyTo(this.sequence, 0);
         }
@@ -47,9 +46,9 @@ namespace Strategy
             this.searchStrategy = strategy;
         }
       
-        public int Search(double numberToSearchFor)
+        public int Find(double numberToSearchFor)
         {
-            return this.searchStrategy.Search(this.sequence,numberToSearchFor);
+            return this.searchStrategy.Find(this.sequence,numberToSearchFor);
         }
        
     }
