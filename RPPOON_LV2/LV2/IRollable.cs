@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LV2
 {
-    internal interface IDiceRoller
+    internal interface IRollable
     {
         void RollAllDice();
     }

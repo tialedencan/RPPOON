@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LV2
 {
-    internal class ClosedDiceRoller : IDiceRoller
+    internal class ClosedDiceRoller : IRollable
     {
         private List<Die> dice;
         private List<int> resultForEachRoll;
