@@ -1,0 +1,14 @@
+D:\Faks\4.semestar\RPPOON\lv\LV5\Proxy\bin\Debug\netcoreapp3.1\Proxy.exe
+D:\Faks\4.semestar\RPPOON\lv\LV5\Proxy\bin\Debug\netcoreapp3.1\Proxy.deps.json
+D:\Faks\4.semestar\RPPOON\lv\LV5\Proxy\bin\Debug\netcoreapp3.1\Proxy.runtimeconfig.json
+D:\Faks\4.semestar\RPPOON\lv\LV5\Proxy\bin\Debug\netcoreapp3.1\Proxy.runtimeconfig.dev.json
+D:\Faks\4.semestar\RPPOON\lv\LV5\Proxy\bin\Debug\netcoreapp3.1\Proxy.dll
+D:\Faks\4.semestar\RPPOON\lv\LV5\Proxy\bin\Debug\netcoreapp3.1\Proxy.pdb
+D:\Faks\4.semestar\RPPOON\lv\LV5\Proxy\obj\Debug\netcoreapp3.1\Proxy.csproj.AssemblyReference.cache
+D:\Faks\4.semestar\RPPOON\lv\LV5\Proxy\obj\Debug\netcoreapp3.1\Proxy.GeneratedMSBuildEditorConfig.editorconfig
+D:\Faks\4.semestar\RPPOON\lv\LV5\Proxy\obj\Debug\netcoreapp3.1\Proxy.AssemblyInfoInputs.cache
+D:\Faks\4.semestar\RPPOON\lv\LV5\Proxy\obj\Debug\netcoreapp3.1\Proxy.AssemblyInfo.cs
+D:\Faks\4.semestar\RPPOON\lv\LV5\Proxy\obj\Debug\netcoreapp3.1\Proxy.csproj.CoreCompileInputs.cache
+D:\Faks\4.semestar\RPPOON\lv\LV5\Proxy\obj\Debug\netcoreapp3.1\Proxy.dll
+D:\Faks\4.semestar\RPPOON\lv\LV5\Proxy\obj\Debug\netcoreapp3.1\Proxy.pdb
+D:\Faks\4.semestar\RPPOON\lv\LV5\Proxy\obj\Debug\netcoreapp3.1\Proxy.genruntimeconfig.cache

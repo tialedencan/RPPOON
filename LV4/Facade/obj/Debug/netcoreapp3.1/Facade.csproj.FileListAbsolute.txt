@@ -1,0 +1,14 @@
+D:\Faks\4.semestar\RPPOON\lv\LV4\Facade\bin\Debug\netcoreapp3.1\Facade.exe
+D:\Faks\4.semestar\RPPOON\lv\LV4\Facade\bin\Debug\netcoreapp3.1\Facade.deps.json
+D:\Faks\4.semestar\RPPOON\lv\LV4\Facade\bin\Debug\netcoreapp3.1\Facade.runtimeconfig.json
+D:\Faks\4.semestar\RPPOON\lv\LV4\Facade\bin\Debug\netcoreapp3.1\Facade.runtimeconfig.dev.json
+D:\Faks\4.semestar\RPPOON\lv\LV4\Facade\bin\Debug\netcoreapp3.1\Facade.dll
+D:\Faks\4.semestar\RPPOON\lv\LV4\Facade\bin\Debug\netcoreapp3.1\Facade.pdb
+D:\Faks\4.semestar\RPPOON\lv\LV4\Facade\obj\Debug\netcoreapp3.1\Facade.csproj.AssemblyReference.cache
+D:\Faks\4.semestar\RPPOON\lv\LV4\Facade\obj\Debug\netcoreapp3.1\Facade.GeneratedMSBuildEditorConfig.editorconfig
+D:\Faks\4.semestar\RPPOON\lv\LV4\Facade\obj\Debug\netcoreapp3.1\Facade.AssemblyInfoInputs.cache
+D:\Faks\4.semestar\RPPOON\lv\LV4\Facade\obj\Debug\netcoreapp3.1\Facade.AssemblyInfo.cs
+D:\Faks\4.semestar\RPPOON\lv\LV4\Facade\obj\Debug\netcoreapp3.1\Facade.csproj.CoreCompileInputs.cache
+D:\Faks\4.semestar\RPPOON\lv\LV4\Facade\obj\Debug\netcoreapp3.1\Facade.dll
+D:\Faks\4.semestar\RPPOON\lv\LV4\Facade\obj\Debug\netcoreapp3.1\Facade.pdb
+D:\Faks\4.semestar\RPPOON\lv\LV4\Facade\obj\Debug\netcoreapp3.1\Facade.genruntimeconfig.cache

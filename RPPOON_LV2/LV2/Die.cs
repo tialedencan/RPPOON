@@ -19,5 +19,9 @@ namespace LV2
             return rolledNumber;
         }
 
+        public int GetNumberOfSides()
+        {
+            return numberOfSides;
+        }
     }
 }

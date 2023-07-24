@@ -4,14 +4,16 @@ using System.Text;
 
 namespace LV2
 {
-    internal class DiceRoller
+    internal class DiceRoller:ILogable
     {
         private List<Die> dice;
         private List<int> resultForEachRoll;
+       
         public DiceRoller()
         {
             this.dice = new List<Die>();
             this.resultForEachRoll = new List<int>();
+           
         }
         public void InsertDie(Die die)
         {
@@ -36,6 +38,18 @@ namespace LV2
         public int DiceCount
         {
             get { return dice.Count; }
+        }
+
+       
+        public string GetStringRepresentation()
+        {
+            StringBuilder sb = new StringBuilder();
+
+            foreach (int result in this.resultForEachRoll)
+            {
+                sb.Append(result);
+            }
+            return sb.ToString();   
         }
     }
 }

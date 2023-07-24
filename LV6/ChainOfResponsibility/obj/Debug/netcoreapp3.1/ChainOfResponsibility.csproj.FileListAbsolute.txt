@@ -1,0 +1,14 @@
+D:\Faks\4.semestar\RPPOON\lv\LV6\ChainOfResponsibility\obj\Debug\netcoreapp3.1\ChainOfResponsibility.csproj.AssemblyReference.cache
+D:\Faks\4.semestar\RPPOON\lv\LV6\ChainOfResponsibility\obj\Debug\netcoreapp3.1\ChainOfResponsibility.GeneratedMSBuildEditorConfig.editorconfig
+D:\Faks\4.semestar\RPPOON\lv\LV6\ChainOfResponsibility\obj\Debug\netcoreapp3.1\ChainOfResponsibility.AssemblyInfoInputs.cache
+D:\Faks\4.semestar\RPPOON\lv\LV6\ChainOfResponsibility\obj\Debug\netcoreapp3.1\ChainOfResponsibility.AssemblyInfo.cs
+D:\Faks\4.semestar\RPPOON\lv\LV6\ChainOfResponsibility\obj\Debug\netcoreapp3.1\ChainOfResponsibility.csproj.CoreCompileInputs.cache
+D:\Faks\4.semestar\RPPOON\lv\LV6\ChainOfResponsibility\bin\Debug\netcoreapp3.1\ChainOfResponsibility.exe
+D:\Faks\4.semestar\RPPOON\lv\LV6\ChainOfResponsibility\bin\Debug\netcoreapp3.1\ChainOfResponsibility.deps.json
+D:\Faks\4.semestar\RPPOON\lv\LV6\ChainOfResponsibility\bin\Debug\netcoreapp3.1\ChainOfResponsibility.runtimeconfig.json
+D:\Faks\4.semestar\RPPOON\lv\LV6\ChainOfResponsibility\bin\Debug\netcoreapp3.1\ChainOfResponsibility.runtimeconfig.dev.json
+D:\Faks\4.semestar\RPPOON\lv\LV6\ChainOfResponsibility\bin\Debug\netcoreapp3.1\ChainOfResponsibility.dll
+D:\Faks\4.semestar\RPPOON\lv\LV6\ChainOfResponsibility\bin\Debug\netcoreapp3.1\ChainOfResponsibility.pdb
+D:\Faks\4.semestar\RPPOON\lv\LV6\ChainOfResponsibility\obj\Debug\netcoreapp3.1\ChainOfResponsibility.dll
+D:\Faks\4.semestar\RPPOON\lv\LV6\ChainOfResponsibility\obj\Debug\netcoreapp3.1\ChainOfResponsibility.pdb
+D:\Faks\4.semestar\RPPOON\lv\LV6\ChainOfResponsibility\obj\Debug\netcoreapp3.1\ChainOfResponsibility.genruntimeconfig.cache

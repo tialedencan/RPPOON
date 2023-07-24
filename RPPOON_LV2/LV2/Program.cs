@@ -10,10 +10,9 @@ namespace LV2
         {
             
             DiceRoller diceRoller = new DiceRoller();
+            ILogger logger = new ConsoleLogger();
             
-
-            int i;
-            for (i = 0; i < 20; i++)
+            for (int i = 0; i < 20; i++)
             {
                 diceRoller.InsertDie(new Die(6));
             }
@@ -30,7 +29,9 @@ namespace LV2
 
             Console.WriteLine(stringBuilder.ToString());
 
+            ILogger fileLogger = new FileLogger("D:/Faks/4.semestar/RPPOON/novi.txt");
 
+            fileLogger.Log(diceRoller);
         }
     }
 }

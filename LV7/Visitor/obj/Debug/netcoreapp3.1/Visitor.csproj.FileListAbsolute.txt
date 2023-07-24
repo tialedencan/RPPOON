@@ -1,0 +1,14 @@
+D:\Faks\4.semestar\RPPOON\lv\LV7\Visitor\bin\Debug\netcoreapp3.1\Visitor.exe
+D:\Faks\4.semestar\RPPOON\lv\LV7\Visitor\bin\Debug\netcoreapp3.1\Visitor.deps.json
+D:\Faks\4.semestar\RPPOON\lv\LV7\Visitor\bin\Debug\netcoreapp3.1\Visitor.runtimeconfig.json
+D:\Faks\4.semestar\RPPOON\lv\LV7\Visitor\bin\Debug\netcoreapp3.1\Visitor.runtimeconfig.dev.json
+D:\Faks\4.semestar\RPPOON\lv\LV7\Visitor\bin\Debug\netcoreapp3.1\Visitor.dll
+D:\Faks\4.semestar\RPPOON\lv\LV7\Visitor\bin\Debug\netcoreapp3.1\Visitor.pdb
+D:\Faks\4.semestar\RPPOON\lv\LV7\Visitor\obj\Debug\netcoreapp3.1\Visitor.csproj.AssemblyReference.cache
+D:\Faks\4.semestar\RPPOON\lv\LV7\Visitor\obj\Debug\netcoreapp3.1\Visitor.GeneratedMSBuildEditorConfig.editorconfig
+D:\Faks\4.semestar\RPPOON\lv\LV7\Visitor\obj\Debug\netcoreapp3.1\Visitor.AssemblyInfoInputs.cache
+D:\Faks\4.semestar\RPPOON\lv\LV7\Visitor\obj\Debug\netcoreapp3.1\Visitor.AssemblyInfo.cs
+D:\Faks\4.semestar\RPPOON\lv\LV7\Visitor\obj\Debug\netcoreapp3.1\Visitor.csproj.CoreCompileInputs.cache
+D:\Faks\4.semestar\RPPOON\lv\LV7\Visitor\obj\Debug\netcoreapp3.1\Visitor.dll
+D:\Faks\4.semestar\RPPOON\lv\LV7\Visitor\obj\Debug\netcoreapp3.1\Visitor.pdb
+D:\Faks\4.semestar\RPPOON\lv\LV7\Visitor\obj\Debug\netcoreapp3.1\Visitor.genruntimeconfig.cache

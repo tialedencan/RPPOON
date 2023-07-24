@@ -1,0 +1,14 @@
+D:\Faks\4.semestar\RPPOON\lv\LV6\Iterator\bin\Debug\netcoreapp3.1\Iterator.exe
+D:\Faks\4.semestar\RPPOON\lv\LV6\Iterator\bin\Debug\netcoreapp3.1\Iterator.deps.json
+D:\Faks\4.semestar\RPPOON\lv\LV6\Iterator\bin\Debug\netcoreapp3.1\Iterator.runtimeconfig.json
+D:\Faks\4.semestar\RPPOON\lv\LV6\Iterator\bin\Debug\netcoreapp3.1\Iterator.runtimeconfig.dev.json
+D:\Faks\4.semestar\RPPOON\lv\LV6\Iterator\bin\Debug\netcoreapp3.1\Iterator.dll
+D:\Faks\4.semestar\RPPOON\lv\LV6\Iterator\bin\Debug\netcoreapp3.1\Iterator.pdb
+D:\Faks\4.semestar\RPPOON\lv\LV6\Iterator\obj\Debug\netcoreapp3.1\Iterator.csproj.AssemblyReference.cache
+D:\Faks\4.semestar\RPPOON\lv\LV6\Iterator\obj\Debug\netcoreapp3.1\Iterator.GeneratedMSBuildEditorConfig.editorconfig
+D:\Faks\4.semestar\RPPOON\lv\LV6\Iterator\obj\Debug\netcoreapp3.1\Iterator.AssemblyInfoInputs.cache
+D:\Faks\4.semestar\RPPOON\lv\LV6\Iterator\obj\Debug\netcoreapp3.1\Iterator.AssemblyInfo.cs
+D:\Faks\4.semestar\RPPOON\lv\LV6\Iterator\obj\Debug\netcoreapp3.1\Iterator.csproj.CoreCompileInputs.cache
+D:\Faks\4.semestar\RPPOON\lv\LV6\Iterator\obj\Debug\netcoreapp3.1\Iterator.dll
+D:\Faks\4.semestar\RPPOON\lv\LV6\Iterator\obj\Debug\netcoreapp3.1\Iterator.pdb
+D:\Faks\4.semestar\RPPOON\lv\LV6\Iterator\obj\Debug\netcoreapp3.1\Iterator.genruntimeconfig.cache
